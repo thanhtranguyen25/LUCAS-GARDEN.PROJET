@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nos stagiaires | Lucas Gardens</title>
+  <meta name="description" content="Rencontrez nos talentueux stagiaires de Lucas Gardens issus de diverses universités">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* Custom styles for student profiles */
+    .students-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+        .students-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Căn đều các card */
+      gap: 20px; /* Khoảng cách giữa các card */
+    }
+
+    .student-card {
+      flex: 1 1 calc(25% - 20px); /* Đảm bảo mỗi card chiếm 25% chiều rộng */
+      max-width: calc(25% - 20px); /* Giới hạn tối đa để giữ đúng số lượng card */
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+
+    .student-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .student-img {
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .student-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .student-card:hover .student-img img {
+      transform: scale(1.05);
+    }
+
+    .student-details {
+      padding: 25px;
+      text-align: center;
+    }
+
+    .student-name {
+      font-size: 1.5rem;
+      color: var(--secondary-color);
+      margin-bottom: 5px;
+      font-family: 'Lora', serif;
+    }
+
+    .student-university {
+      font-size: 1rem;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    .student-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: justify;
+  hyphens: auto;
+  word-spacing: 1.5px;
+  text-justify: inter-word;
+}
+
+
+    .student-link {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .student-link:hover {
+    background-color: var(--secondary-color); /* Đổi màu nền */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng đổ bóng */
+    color: white; /* Đổi màu chữ */
+    }
+
+    .student-profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .profile-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .profile-img-container {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border: 5px solid var(--primary-color);
+    }
+
+    .profile-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .student-name {
+      font-size: 1.5rem;
+      color: var(--secondary-color);
+      margin-bottom: 10px;
+      font-family: 'Lora', serif;
+    }
+
+    .student-university {
+      font-size: 1.1rem;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    .student-quote {
+      font-style: italic;
+      font-size: 1rem;
+      max-width: 700px;
+      color: #555;
+      margin-bottom: 30px;
+      line-height: 1.8;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-icon {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: var(--primary-color);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+
+    .social-icon:hover {
+      background-color: var(--secondary-color);
+      transform: translateY(-5px);
+    }
+
+    .profile-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      margin-top: 40px;
+    }
+
+    .content-section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      color: var(--secondary-color);
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .skill-tag {
+      background-color: #f0f5f0;
+      color: var(--primary-color);
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .timeline {
+      position: relative;
+      margin-left: 20px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 25px;
+    }
+
+    .timeline-item:before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      top: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: var(--primary-color);
+    }
+
+    .timeline-item:after {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 15px;
+      bottom: -25px;
+      width: 1px;
+      background-color: var(--primary-color);
+    }
+
+    .timeline-item:last-child:after {
+      display: none;
+    }
+
+    .timeline-date {
+      font-weight: 600;
+      color: var(--primary-color);
+      margin-bottom: 5px;
+    }
+
+    .timeline-title {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .gallery-item {
+      border-radius: 10px;
+      overflow: hidden;
+      height: 200px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.03);
+    }
+
+    .quote-container {
+      background-color: #f5f5f5;
+      padding: 50px 20px;
+      text-align: center;
+      margin: 60px 0;
+      border-radius: 10px;
+    }
+
+    .quote {
+      font-size: 1.6rem;
+      font-style: italic;
+      color: var(--secondary-color);
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+      position: relative;
+    }
+
+    .quote:before, .quote:after {
+      font-family: 'FontAwesome';
+      font-size: 2rem;
+      color: var(--primary-color);
+      opacity: 0.3;
+      position: absolute;
+    }
+
+    .quote:before {
+      content: "\f10d";
+      left: -40px;
+      top: -20px;
+    }
+
+    .quote:after {
+      content: "\f10e";
+      right: -40px;
+      bottom: -20px;
+    }
+
+    @media (max-width: 900px) {
+      .students-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .quote:before, .quote:after {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../index.html" class="logo">
+          <img src="../img/logo.png" alt="Lucas Gardens Logo">
+          <span class="logo-text">Lucas Gardens</span>
+        </a>
+        <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="nav-links">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="about.html">À propos de nous</a></li>
+          <li><a href="../pages/students.html">Étudiants</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="container">
+      <div class="breadcrumb-container">
+        <div class="breadcrumb-item"><a href="../index.html">Accueil</a></div>
+        <div class="breadcrumb-item active">Nos stagiaires</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Students Section -->
+  <div class="page-header">
+    <div class="container">
+      <h1 class="page-title">Rencontrez nos stagiaires</h1>
+      <p class="page-subtitle">Des étudiants talentueux du monde entier apprennent et contribuent à Lucas Gardens</p>
+    </div>
+  </div>
+
+  <!-- Students Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="students-container">
+        <div class="students-grid animate-on-scroll">
+          <!-- Student 1 -->
+          <div class="student-card">
+            <div class="student-img">
+              <img src="../img/profile.jpg" alt="Thanh Trà">
+            </div>
+            <div class="student-details">
+              <h3 class="student-name">Thanh Trà</h3>
+              <p class="student-university">Université Côte d'Azur, France</p>
+              <p class="student-desc"> Spécialisée dans l'aménagement paysager durable, je privilégie les jardins méditerranéens et les systèmes économes en eau.</p>
+              <a href="thanh-tra.html" class="student-link">Voir le profil</a>
+            </div>
+          </div>
+
+          <!-- Student 2 -->
+          <div class="student-card">
+            <div class="student-img">
+              <img src="../img/thanhvien2.jpg" alt="Sania Romany">
+            </div>
+            <div class="student-details">
+              <h3 class="student-name">Sania Romany</h3>
+              <p class="student-university">Université Côte d'Azur, France</p>
+              <p class="student-desc">Je me concentre sur la conception de jardins urbains et les projets d'aménagement paysager communautaires, en mettant l'accent sur les plantes indigènes.</p>
+              <a href="thanhvien2.html" class="student-link">Voir le profil</a>
+            </div>
+          </div>
+
+          <!-- Student 3 -->
+          <div class="student-card">
+            <div class="student-img">
+              <img src="../img/thanhvien3.jpg" alt="Carla Fourcade">
+            </div>
+            <div class="student-details">
+              <h3 class="student-name">Carla Fourcade</h3>
+              <p class="student-university">University Côte d'Azur, France</p>
+              <p class="student-desc">Recherche de techniques d'aménagement paysager résistantes à la sécheresse et d'adaptations de plantes indigènes aux climats méditerranéens.</p>
+              <a href="thanhvien3.html" class="student-link">Voir le profil</a>
+            </div>
+          </div>
+          <!-- Student 4 -->
+          <div class="student-card">
+            <div class="student-img">
+              <img src="../img/thanhvien4.jpg" alt="Camille Barrier">
+            </div>
+            <div class="student-details">
+              <h3 class="student-name">Camille Barrier</h3>
+              <p class="student-university">University Côte d'Azur, France</p>
+              <p class="student-desc">Recherche de techniques d'aménagement paysager résistantes à la sécheresse et d'adaptations de plantes indigènes aux climats méditerranéens.</p>
+              <a href="thanhvien4.html" class="student-link">Voir le profil</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div>
+          <h3 class="footer-logo">Lucas Gardens</h3>
+          <p class="footer-desc">Services professionnels d'aménagement paysager et de jardinage pour propriétés résidentielles et commerciales. Créateurs d'espaces extérieurs magnifiques depuis 2008.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Liens rapides</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Galerie</a></li>
+            <li><a href="about.html">À propos de nous</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Nos services</h4>
+          <ul class="footer-links">
+            <li><a href="services/garden-design.html">Conception de jardin</a></li>
+            <li><a href="services/landscaping.html">Aménagement paysager</a></li>
+            <li><a href="services/garden-maintenance.html">Entretien de jardin</a></li>
+            <li><a href="services/tree-services.html">Services arboricoles</a></li>
+            <li><a href="services/irrigation.html">Systèmes d'irrigation</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contactez-nous</h4>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt"></i> 15 Rue des Jardins, Paris</li>
+            <li><i class="fas fa-phone"></i> +33 123 456 789</li>
+            <li><i class="fas fa-envelope"></i> info@lucasjardins.fr</li>
+            <li><i class="fas fa-clock"></i> Lun-Ven: 8:00 AM - 6:00 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Lucas Gardens. Tous droits réservés. | <a href="privacy-policy.html">Politique de confidentialité</a> | <a href="terms-of-service.html">Conditions d'utilisation</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

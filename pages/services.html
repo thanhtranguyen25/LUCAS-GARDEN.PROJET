@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Landscaping & Garden Services | Lucas Gardens</title>
+  <meta name="description" content="Explore the comprehensive landscaping and garden services offered by Lucas Gardens, including garden design, maintenance, tree services, and more.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lucasjardins.fr/pages/services.html">
+  <meta property="og:title" content="Professional Landscaping & Garden Services | Lucas Gardens">
+  <meta property="og:description" content="Explore the comprehensive landscaping and garden services offered by Lucas Gardens, including garden design, maintenance, tree services, and more.">
+  <meta property="og:image" content="https://lucasjardins.fr/img/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://lucasjardins.fr/pages/services.html">
+  <meta name="twitter:title" content="Professional Landscaping & Garden Services | Lucas Gardens">
+  <meta name="twitter:description" content="Explore the comprehensive landscaping and garden services offered by Lucas Gardens, including garden design, maintenance, tree services, and more.">
+  <meta name="twitter:image" content="https://lucasjardins.fr/img/og-image.jpg">
+
+  <!-- Structured Data - BreadcrumbList -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://lucasjardins.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://lucasjardins.fr/pages/services.html"
+        }
+      ]
+    }
+  </script>
+
+  <!-- Structured Data - Service Description -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Landscaping and Garden Services",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Lucas Gardens",
+        "image": "https://lucasjardins.fr/img/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "15 Rue des Jardins",
+          "addressLocality": "Paris",
+          "postalCode": "75001",
+          "addressCountry": "FR"
+        }
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        "geoRadius": "50 km"
+      },
+      "description": "Professional landscaping and garden services including garden design, maintenance, tree services, irrigation systems, and more.",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "Variable depending on service and scope",
+          "priceCurrency": "EUR"
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="../index.html" class="logo">
+          <img src="../img/logo.png" alt="Lucas Gardens Logo">
+          <span class="logo-text">Lucas Gardens</span>
+        </a>
+        <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="nav-links">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="../pages/students.html">Students</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="container">
+      <div class="breadcrumb-container">
+        <div class="breadcrumb-item"><a href="../index.html">Home</a></div>
+        <div class="breadcrumb-item active">Services</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1 class="page-title">Our Services</h1>
+      <p class="page-subtitle">Comprehensive landscaping and garden solutions for your outdoor space</p>
+    </div>
+  </div>
+
+  <!-- Service Filters -->
+  <section class="section" style="padding-bottom: 0;">
+    <div class="container">
+      <div class="service-filters" style="display: flex; justify-content: center; margin-bottom: 5px;">
+        <button class="service-filter active" data-filter="all" style="background: none; border: none; padding: 10px 20px; margin: 0 5px; cursor: pointer; position: relative; font-weight: 1000;">All Services</button>
+        <button class="service-filter" data-filter="design" style="background: none; border: none; padding: 10px 20px; margin: 0 5px; cursor: pointer; position: relative; font-weight: 1000;">Design</button>
+        <button class="service-filter" data-filter="landscaping" style="background: none; border: none; padding: 10px 20px; margin: 0 5px; cursor: pointer; position: relative; font-weight: 1000;">Landscaping</button>
+        <button class="service-filter" data-filter="maintenance" style="background: none; border: none; padding: 10px 20px; margin: 0 5px; cursor: pointer; position: relative; font-weight: 1000;">Maintenance</button>
+        <button class="service-filter" data-filter="specialized" style="background: none; border: none; padding: 10px 20px; margin: 0 5px; cursor: pointer; position: relative; font-weight: 1000;">Specialized</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services">
+    <div class="container">
+      <div class="services-grid">
+        <!-- Garden Design -->
+        <div class="service-card" data-category="design">
+          <img src="../img/garden-service1.jpg" alt="Garden Design Service" class="service-img">
+          <div class="service-content">
+            <h3 class="service-title">Garden Design</h3>
+            <p class="service-text">Our garden design service creates custom outdoor spaces that reflect your style and enhance your property's natural features. We consider functionality, aesthetics, and sustainability in every design.</p>
+            <a href="services/garden-design.html" class="btn">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Landscaping -->
+        <div class="service-card" data-category="landscaping">
+          <img src="../img/garden-service2.jpg" alt="Landscaping Service" class="service-img">
+          <div class="service-content">
+            <h3 class="service-title">Landscaping</h3>
+            <p class="service-text">From complete garden transformations to small landscaping projects, our team has the expertise to create beautiful outdoor spaces that stand the test of time with quality materials and expert craftsmanship.</p>
+            <a href="services/landscaping.html" class="btn">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Garden Maintenance -->
+        <div class="service-card" data-category="maintenance">
+          <img src="../img/gardener1.jpg" alt="Garden Maintenance Service" class="service-img">
+          <div class="service-content">
+            <h3 class="service-title">Garden Maintenance</h3>
+            <p class="service-text">Our comprehensive maintenance services keep your garden looking beautiful throughout the year. We offer tailored maintenance packages including pruning, weeding, fertilizing, and seasonal care.</p>
+            <a href="services/garden-maintenance.html" class="btn">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Tree Services -->
+        <div class="service-card" data-category="specialized">
+          <img src="../img/gardener2.jpg" alt="Tree Services" class="service-img">
+          <div class="service-content">
+            <h3 class="service-title">Tree Services</h3>
+            <p class="service-text">Our certified arborists provide comprehensive tree care services including pruning, crown reduction, tree removal, disease treatment, and tree planting to maintain the health and beauty of your trees.</p>
+            <a href="services/tree-services.html" class="btn">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Patio & Deck Construction -->
+        <div class="service-card" data-category="landscaping">
+          <img src="../img/patio.jpg" alt="Patio & Deck Construction" class="service-img">
+          <div class="service-content">
+            <h3 class="service-title">Patio & Deck Construction</h3>
+            <p class="service-text">Extend your living space outdoors with our custom patio and deck construction services. We design and build beautiful, durable outdoor living areas using quality materials and expert craftsmanship.</p>
+            <a href="services/patio-deck-construction.html" class="btn">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Irrigation Systems -->
+        <div class="service-card" data-category="specialized">
+          <img src="../img/tools.jpg" alt="Irrigation Systems" class="service-img">
+          <div class="service-content">
+            <h3 class="service-title">Irrigation Systems</h3>
+            <p class="service-text">Our water-efficient irrigation systems ensure your plants receive the right amount of water while conserving this precious resource. We design, install, and maintain automated systems tailored to your garden's needs.</p>
+            <a href="services/irrigation.html" class="btn">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Outdoor Lighting -->
+        <div class="service-card" data-category="specialized">
+          <img src="../img/hero-image.jpg" alt="Outdoor Lighting" class="service-img">
+          <div class="service-content">
+            <h3 class="service-title">Outdoor Lighting</h3>
+            <p class="service-text">Enhance the beauty and security of your outdoor space with our custom lighting solutions. We design and install energy-efficient lighting systems that highlight your landscape's best features and extend its usability after dark.</p>
+            <a href="services/outdoor-lighting.html" class="btn">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Lawn Care -->
+        <div class="service-card" data-category="maintenance">
+          <img src="../img/lawn-care.jpg" alt="Lawn Care" class="service-img">
+          <div class="service-content">
+            <h3 class="service-title">Lawn Care</h3>
+            <p class="service-text">Our comprehensive lawn care services keep your grass healthy and vibrant. We offer mowing, aeration, overseeding, fertilization, weed control, and pest management to maintain a lush, green lawn year-round.</p>
+            <a href="services/lawn-care.html" class="btn">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Sustainable Garden Solutions -->
+        <div class="service-card" data-category="design">
+          <img src="../img/solutions.jpg" alt="Sustainable Garden Solutions" class="service-img">
+          <div class="service-content">
+            <h3 class="service-title">Sustainable Garden Solutions</h3>
+            <p class="service-text">We specialize in creating eco-friendly gardens that conserve water, support biodiversity, and reduce environmental impact. Our sustainable solutions include native plant selection, rainwater harvesting, and organic pest management.</p>
+            <a href="services/sustainable-gardens.html" class="btn">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Seasonal Garden Preparation -->
+        <div class="service-card" data-category="maintenance">
+          <img src="../img/prepare.jpg" alt="Seasonal Garden Preparation" class="service-img">
+          <div class="service-content">
+            <h3 class="service-title">Seasonal Garden Preparation</h3>
+            <p class="service-text">Keep your garden thriving through every season with our specialized seasonal preparation services. We offer spring cleanup, summer maintenance, fall preparation, and winter protection to ensure year-round garden health.</p>
+            <a href="services/seasonal-preparation.html" class="btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta" style="background-color: var(--secondary-color); color: white; text-align: center;">
+    <div class="container">
+      <h2 style="margin-bottom: 20px; font-size: 2.2rem;">Ready to Transform Your Outdoor Space?</h2>
+      <p style="margin-bottom: 30px; max-width: 800px; margin-left: auto; margin-right: auto;">Contact us today for a free consultation and quote. Our expert team is ready to bring your garden dreams to life.</p>
+      <a href="contact.html" class="btn btn-secondary" style="font-size: 1.1rem; padding: 15px 30px;">Contact Us Today</a>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Clients Say</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Lucas Gardens transformed our backyard into a beautiful oasis. Their attention to detail and professional approach made the entire process enjoyable. We couldn't be happier with the results!"</p>
+          <h4 class="client-name">Marie Dupont</h4>
+          <p class="client-role">Residential Client, Paris</p>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">"We hired Lucas Gardens for our commercial property landscaping, and they exceeded our expectations. The team was professional, efficient, and delivered a stunning result that has impressed our customers."</p>
+          <h4 class="client-name">Jean Bertrand</h4>
+          <p class="client-role">Business Owner, Lyon</p>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">"The maintenance service from Lucas Gardens has kept our garden looking beautiful all year round. Their team is reliable, knowledgeable, and takes genuine care of our plants. Highly recommended!"</p>
+          <h4 class="client-name">Sophie Laurent</h4>
+          <p class="client-role">Residential Client, Marseille</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div>
+          <h3 class="footer-logo">Lucas Gardens</h3>
+          <p class="footer-desc">Professional landscaping and garden services for residential and commercial properties. Creating beautiful outdoor spaces since 2008.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="services/garden-design.html">Garden Design</a></li>
+            <li><a href="services/landscaping.html">Landscaping</a></li>
+            <li><a href="services/garden-maintenance.html">Maintenance</a></li>
+            <li><a href="services/tree-services.html">Tree Services</a></li>
+            <li><a href="services/irrigation.html">Irrigation Systems</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact Us</h4>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt"></i> 15 Rue des Jardins, Paris</li>
+            <li><i class="fas fa-phone"></i> +33 123 456 789</li>
+            <li><i class="fas fa-envelope"></i> info@lucasjardins.fr</li>
+            <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Lucas Gardens. All Rights Reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
