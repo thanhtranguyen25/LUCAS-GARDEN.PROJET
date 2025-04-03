@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | Lucas Gardens</title>
+  <title>Contactez Nous | Lucas Gardens</title>
   <meta name="description" content="Contact Lucas Gardens for professional landscaping and garden services. Get in touch for a free consultation or quote for your garden project.">
 
   <!-- Favicon -->
@@ -44,9 +44,9 @@
       "image": "https://lucasjardins.fr/img/logo.png",
       "@id": "https://lucasjardins.fr",
       "url": "https://lucasjardins.fr",
-      "telephone": "+33 123 456 789",
+      "telephone": "+33 01 02 03 04 05",
       "address": {
-        "@type": "PostalAddress",
+        "@type": "Addresse Postale",
         "streetAddress": "15 Rue des Jardins",
         "addressLocality": "Paris",
         "postalCode": "75001",
@@ -60,14 +60,14 @@
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
+          "Lundi",
+          "Mardi",
+          "Mercredi",
+          "Jeudi",
+          "Vendredi"
         ],
-        "opens": "08:00",
-        "closes": "18:00"
+        "ouvert": "08:00",
+        "ferme": "18:00"
       },
       "sameAs": [
         "https://www.facebook.com/lucasjardins",
@@ -86,7 +86,7 @@
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Home",
+          "name": "Accueil",
           "item": "https://lucasjardins.fr/"
         },
         {
@@ -113,11 +113,11 @@
           <i class="fas fa-bars"></i>
         </button>
         <ul class="nav-links" id="nav-links">
-          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html">Accueil</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="../pages/students.html">Students</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="about.html">A propos</a></li>
+          <li><a href="../pages/students.html">Etudiants</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
@@ -129,7 +129,7 @@
   <div class="breadcrumb">
     <div class="container">
       <div class="breadcrumb-container">
-        <div class="breadcrumb-item"><a href="../index.html">Home</a></div>
+        <div class="breadcrumb-item"><a href="../index.html">Accueil</a></div>
         <div class="breadcrumb-item active">Contact</div>
       </div>
     </div>
@@ -138,8 +138,8 @@
   <!-- Page Header -->
   <div class="page-header">
     <div class="container">
-      <h1 class="page-title">Contact Us</h1>
-      <p class="page-subtitle">Get in touch with our team for consultations, quotes, or any questions about our services</p>
+      <h1 class="page-title">Contactez Nous</h1>
+      <p class="page-subtitle">Contactez notre équipe pour des consultations, des devis ou toute question sur nos services</p>
     </div>
   </div>
 
@@ -148,14 +148,14 @@
     <div class="container">
       <div class="contact-container">
         <div class="contact-info">
-          <h2 style="font-size: 1.8rem; margin-bottom: 25px; color: var(--secondary-color);">Get In Touch</h2>
+          <h2 style="font-size: 1.8rem; margin-bottom: 25px; color: var(--secondary-color);">Entrer en contact</h2>
 
           <div class="contact-item">
             <div class="contact-icon">
               <i class="fas fa-map-marker-alt"></i>
             </div>
             <div>
-              <h3>Our Office</h3>
+              <h3>Notre bureau</h3>
               <p>15 Rue des Jardins<br>75001 Paris, France</p>
             </div>
           </div>
@@ -166,7 +166,7 @@
             </div>
             <div>
               <h3>Phone</h3>
-              <p>+33 123 456 789</p>
+              <p>+33 01 02 03 04 05</p>
             </div>
           </div>
 
@@ -185,10 +185,10 @@
               <i class="fas fa-clock"></i>
             </div>
             <div>
-              <h3>Business Hours</h3>
-              <p>Monday - Friday: 8:00 AM - 6:00 PM<br>
-              Saturday: By appointment only<br>
-              Sunday: Closed</p>
+              <h3>Horaires</h3>
+              <p>Lundi - Vendredi: 8:00 - 18:00<br>
+              Samedi : Sur rendez-vous uniquement<br>
+              Sunday: Fermé</p>
             </div>
           </div>
 
@@ -201,49 +201,49 @@
         </div>
 
         <div class="contact-form-container">
-          <h2 style="font-size: 1.8rem; margin-bottom: 25px; color: var(--secondary-color);">Send Us a Message</h2>
+          <h2 style="font-size: 1.8rem; margin-bottom: 25px; color: var(--secondary-color);">Envoyez nous un message</h2>
           <form id="contact-form" class="contact-form">
             <div class="form-group">
-              <label for="name">Your Name</label>
+              <label for="name">Votre Nom</label>
               <input type="text" id="name" name="name" required>
             </div>
 
             <div class="form-group">
-              <label for="email">Your Email</label>
+              <label for="email">Votre Email</label>
               <input type="email" id="email" name="email" required>
             </div>
 
             <div class="form-group">
-              <label for="phone">Phone Number</label>
+              <label for="phone">Votre Numéro</label>
               <input type="tel" id="phone" name="phone">
             </div>
 
             <div class="form-group">
-              <label for="service">Service Interested In</label>
+              <label for="service">Service intéressé par</label>
               <select id="service" name="service">
-                <option value="">Please select a service</option>
-                <option value="garden-design">Garden Design</option>
-                <option value="landscaping">Landscaping</option>
-                <option value="maintenance">Garden Maintenance</option>
-                <option value="tree-services">Tree Services</option>
-                <option value="irrigation">Irrigation Systems</option>
-                <option value="other">Other (Please specify)</option>
+                <option value="">Veuillez sélectionner un service</option>
+                <option value="garden-design">Conception de jardin</option>
+                <option value="landscaping">Aménagement paysager</option>
+                <option value="maintenance">Entretien du jardin</option>
+                <option value="tree-services">Services d'arbres</option>
+                <option value="irrigation">Systèmes d'irrigation</option>
+                <option value="other">Autre (veuillez préciser)</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label for="message">Your Message</label>
+              <label for="message">Votre Message</label>
               <textarea id="message" name="message" required></textarea>
             </div>
 
             <div class="form-group">
               <label>
                 <input type="checkbox" name="privacy" required>
-                I agree to the <a href="privacy-policy.html">Privacy Policy</a> and consent to having my data processed
+                J'accepte la <a href="privacy-policy.html">politique de confidentialité</a> et je consens au traitement de mes données
               </label>
             </div>
 
-            <button type="submit" class="btn form-btn">Send Message</button>
+            <button type="submit" class="btn form-btn">Envoyer un Message</button>
           </form>
         </div>
       </div>
@@ -263,31 +263,31 @@
   <!-- FAQ Preview Section -->
   <section class="section faq" style="padding-top: 0;">
     <div class="container">
-      <h2 class="section-title">Frequently Asked Questions</h2>
+      <h2 class="section-title">Questions Fréquentes</h2>
       <div class="faq-container">
         <div class="faq-item">
-          <div class="faq-question">What areas do you serve?</div>
+          <div class="faq-question">Quelles zones desservez-vous ?</div>
           <div class="faq-answer">
-            <p>Lucas Gardens primarily serves Paris and the surrounding areas, including the Île-de-France region. We also take on projects in other regions of France depending on the scope. Contact us to find out if we service your location.</p>
+            <p>Lucas Gardens intervient principalement à Paris et dans ses environs, notamment en Île-de-France. Nous réalisons également des projets dans d'autres régions de France, selon l'ampleur de vos projets. Contactez-nous pour savoir si nous intervenons dans votre région.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-question">How much does a garden design or landscaping project cost?</div>
+          <div class="faq-question">Combien coûte un projet de conception de jardin ou d’aménagement paysager ?</div>
           <div class="faq-answer">
-            <p>The cost of a garden design or landscaping project varies depending on the size of your property, the complexity of the design, and the materials used. We provide free consultations and detailed quotes before starting any work. Contact us for a personalized estimate based on your specific requirements.</p>
+            <p>Le coût d'un projet d'aménagement paysager ou de conception de jardin varie selon la taille de votre propriété, la complexité du projet et les matériaux utilisés. Nous proposons des consultations gratuites et des devis détaillés avant le début des travaux. Contactez-nous pour un devis personnalisé adapté à vos besoins spécifiques.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-question">What can I expect during a consultation?</div>
+          <div class="faq-question">À quoi puis-je m’attendre lors d’une consultation ?</div>
           <div class="faq-answer">
-            <p>During an initial consultation, one of our garden designers will visit your property to assess the space, discuss your vision and requirements, and understand your budget. We'll then provide you with design ideas and a detailed quote. The consultation typically takes 1-2 hours, after which we'll follow up with a comprehensive proposal.</p>
+            <p>Lors d'une première consultation, l'un de nos paysagistes se rendra à votre propriété pour évaluer l'espace, discuter de votre vision et de vos besoins, et comprendre votre budget. Nous vous proposerons ensuite des idées d'aménagement et un devis détaillé. La consultation dure généralement une à deux heures, après quoi nous vous soumettrons une proposition complète.</p>
           </div>
         </div>
       </div>
       <div style="text-align: center; margin-top: 30px;">
-        <a href="faq.html" class="btn">View All FAQs</a>
+        <a href="faq.html" class="btn">Afficher toutes les FAQ</a>
       </div>
     </div>
   </section>
@@ -298,7 +298,7 @@
       <div class="footer-container">
         <div>
           <h3 class="footer-logo">Lucas Gardens</h3>
-          <p class="footer-desc">Professional landscaping and garden services for residential and commercial properties. Creating beautiful outdoor spaces since 2008.</p>
+          <p class="footer-desc">Services professionnels d'aménagement paysager et de jardinage pour propriétés résidentielles et commerciales. Créateurs d'espaces extérieurs magnifiques depuis 2008.</p>
           <div class="social-links">
             <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
@@ -308,40 +308,40 @@
         </div>
 
         <div>
-          <h4 class="footer-title">Quick Links</h4>
+          <h4 class="footer-title">Liens rapides</h4>
           <ul class="footer-links">
-            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html">Accueil</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Galerie</a></li>
+            <li><a href="about.html">A propos</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-title">Our Services</h4>
+          <h4 class="footer-title">Nos Services</h4>
           <ul class="footer-links">
-            <li><a href="services/garden-design.html">Garden Design</a></li>
-            <li><a href="services/landscaping.html">Landscaping</a></li>
-            <li><a href="services/garden-maintenance.html">Maintenance</a></li>
-            <li><a href="services/tree-services.html">Tree Services</a></li>
-            <li><a href="services/irrigation.html">Irrigation Systems</a></li>
+            <li><a href="services/garden-design.html">Conception de jardin</a></li>
+            <li><a href="services/landscaping.html">Aménagement paysager</a></li>
+            <li><a href="services/garden-maintenance.html">Entretien</a></li>
+            <li><a href="services/tree-services.html">Services d'arbres</a></li>
+            <li><a href="services/irrigation.html">Systèmes d'irrigation</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-title">Contact Us</h4>
+          <h4 class="footer-title">Contactez Nous</h4>
           <ul class="footer-links">
             <li><i class="fas fa-map-marker-alt"></i> 15 Rue des Jardins, Paris</li>
-            <li><i class="fas fa-phone"></i> +33 123 456 789</li>
+            <li><i class="fas fa-phone"></i> +33 01 02 03 04 05</li>
             <li><i class="fas fa-envelope"></i> info@lucasjardins.fr</li>
-            <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM</li>
+            <li><i class="fas fa-clock"></i> Lundi - Vendredi: 8:00 - 18:00</li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 Lucas Gardens. All Rights Reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+        <p>&copy; 2025 Lucas Gardens. Tous droit réservés. | <a href="privacy-policy.html">Politique de confidentialité</a> | <a href="terms-of-service.html">Conditions d'utilisation</a></p>
       </div>
     </div>
   </footer>
